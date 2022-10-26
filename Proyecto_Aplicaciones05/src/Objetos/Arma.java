@@ -1,5 +1,5 @@
 package Objetos;
 
-public class Arma {
+public class Arma extends Objeto{
 
 }
