@@ -2,6 +2,8 @@ package Ventanas;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -9,24 +11,44 @@ import javax.swing.JPanel;
 
 public class VentanaInicial extends JFrame{
 
-	protected JButton nuevapartida;
-	protected JButton cargarpartida;
+	protected JButton botonnuevapartida;
+	protected JButton botoncargarpartida;
+	protected NuevaPartida nuevapartida;
+	protected CargarPartida cargarpartida;
 	
 	public VentanaInicial() {
 		
+		nuevapartida = new NuevaPartida();
+		cargarpartida = new CargarPartida();
+		
 		getContentPane().setLayout(null);
 		
-		nuevapartida = new JButton("Nueva Partda");
-		cargarpartida = new JButton("Cargar Partida");
+		botonnuevapartida = new JButton("Nueva Partda");
+		botonnuevapartida.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				nuevapartida.setVisible(true);
+			}
+		});
+		botoncargarpartida = new JButton("Cargar Partida");
+		botoncargarpartida.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				cargarpartida.setVisible(true);
+			}
+		});
 		
-		nuevapartida.setSize(200, 50);
-		cargarpartida.setSize(200, 50);
+		botonnuevapartida.setSize(200, 50);
+		botoncargarpartida.setSize(200, 50);
 		
-		nuevapartida.setLocation(300, 80);
-		cargarpartida.setLocation(300, 180);
+		botonnuevapartida.setLocation(300, 80);
+		botoncargarpartida.setLocation(300, 180);
 		
-		getContentPane().add(nuevapartida);
-		getContentPane().add(cargarpartida);
+		getContentPane().add(botonnuevapartida);
+		getContentPane().add(botoncargarpartida);
 		
 		this.setTitle("Inicio");
 		this.setLocationRelativeTo(null);
