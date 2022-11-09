@@ -46,18 +46,18 @@ public class Cofre extends Objeto {
 		return x;
 	}
 	
-//	public String abrirCofre() {
-//		if (this.tieneLlave == true) {
-//			int o = objetoAleatorio();
-//			System.out.println("¡Enhorabuena, has abierto el cofre!");
-//			if (o==0) {
-//				System.out.println("Has obtenido una poción de curación");
-//			}else {
-//				System.out.println("Has obtenido una poción de ataque");
-//			}
-//		}else {
-//			return "Lo siento, pero no tienes la llave para abrir el cofre";
-//		}
-//	}
-//
+	public String abrirCofre() {
+		if (this.tieneLlave == true) {
+			int o = objetoAleatorio();
+			System.out.println("¡Enhorabuena, has abierto el cofre!");
+			if (o==0) {
+				System.out.println("Has obtenido una poción de curación");
+			}else {
+				System.out.println("Has obtenido una poción de ataque");
+			}
+		}else {
+			return "Lo siento, pero no tienes la llave para abrir el cofre";
+		}
+	}
+
 }
