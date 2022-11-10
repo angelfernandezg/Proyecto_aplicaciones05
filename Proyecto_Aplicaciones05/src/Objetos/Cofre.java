@@ -51,9 +51,9 @@ public class Cofre extends Objeto {
 			int o = objetoAleatorio();
 			System.out.println("¡Enhorabuena, has abierto el cofre!");
 			if (o==0) {
-				System.out.println("Has obtenido una poción de curación");
+				return"Has obtenido una poción de curación";
 			}else {
-				System.out.println("Has obtenido una poción de ataque");
+				return"Has obtenido una poción de ataque";
 			}
 		}else {
 			return "Lo siento, pero no tienes la llave para abrir el cofre";
