@@ -8,9 +8,17 @@ public class InfoDeLaPartida extends JFrame{
 
 	public InfoDeLaPartida() {
 		
+		getContentPane().setLayout(null);
+		
+		String[] columnasrecuento= {"Accion", "Cantidad"};
+		Object[][] datosrecuento= {};
+		
+		String[] columnasacciones = {"Paso", "Realizado"};
+		Object[][] datosacciones = {};
+		
 		JTabbedPane pestañas = new JTabbedPane();
-		JTable recuento = new JTable();
-		JTable acciones = new JTable();
+		JTable recuento = new JTable(datosrecuento, columnasrecuento);
+		JTable acciones = new JTable(datosacciones, columnasacciones);
 		
 		pestañas.add("Recuento", recuento);
 		acciones.add("Acciones", acciones);
