@@ -1,20 +1,19 @@
 package Objetos;
 
-public class Sala1 extends Cofre  {
-	
+public class Sala4 extends Cofre{
 	protected int cofre;
 	protected int llave;
 	protected int libro;
-	protected int anillo;
+	protected int guante;
 	
 
-	public Sala1(Boolean tieneLlave, int objeto, int cofre, int llave, int libro, int anillo) {
+	public Sala4(Boolean tieneLlave, int objeto, int cofre, int llave, int libro, int guante) {
 		super(tieneLlave, objeto);
 		// TODO Auto-generated constructor stub
 		this.cofre = cofre;
 		this.llave = llave;
 		this.libro = libro;
-		this.anillo = anillo;
+		this.guante = guante;
 	}
 	
 	int objeto = objetoAleatorio();
@@ -30,15 +29,12 @@ public class Sala1 extends Cofre  {
 			}
 		
 		if (objeto == 1) {
-			System.out.println("Has encontrado el libro de la leyenda de Ulises, di abrir para leerlo");
+			System.out.println("Has encontrado el libro de la leyenda de Troya, di abrir para leerlo");
 		}
 		
 		if (objeto == 1) {
-			System.out.println("Has encontrado el anillo único , di equipar para poder utilizarlo");
+			System.out.println("Has encontrado los guante de Freddy Krueger , di equipar para poder utilizarlo");
 		}
 	}
-	
-	
-	
 	
 }
