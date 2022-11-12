@@ -2,7 +2,7 @@ package Objetos;
 
 public class Enemigo4 extends Enemigo{
 
-//Orco
+//Orco 
 	protected int mazo;
 
 	public Enemigo4(Boolean tieneLlave, int objeto, int salud, int ataque, int defensa, int experiencia, int mazo) {
