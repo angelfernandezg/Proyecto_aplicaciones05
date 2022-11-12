@@ -1,4 +1,5 @@
 package Objetos;
+import java.util.Scanner;
 
 public class Sala1 extends Cofre  {
 	
@@ -28,17 +29,44 @@ public class Sala1 extends Cofre  {
 		else {
 			System.out.println("Parece que el cofre no está por aquí");
 			}
-		
-		if (objeto == 1) {
-			System.out.println("Has encontrado el libro de la leyenda de Ulises, di abrir para leerlo");
-		}
-		
-		if (objeto == 1) {
-			System.out.println("Has encontrado el anillo único , di equipar para poder utilizarlo");
-		}
 	}
+		
+		public void getInspecionarsala(inspeccionar I) {
+			
+			Scanner scanner = new Scanner(System.in);
+			String respuesta = scanner.nextLine();
+			scanner.close();
+			if (respuesta == "i" | respuesta == "inspeccionar"){
+				
+				if (objeto == 1) {
+					System.out.println("Has encontrado el libro de la leyenda de Ulises, di abrir para leerlo");
+					Scanner scanner2 = new Scanner(System.in);
+					String respuesta2 = scanner2.nextLine();
+					scanner2.close();
+					if (respuesta2 == "abrir") {
+						System.out.println("Parece que me he dejado las gafas de leer en casa.\nUna pena"
+								+ "no poder leer esta obra de arte, otra vez será.");
+					}
+					
+				}
+				
+				if (objeto == 1) {
+					System.out.println("Has encontrado el anillo único , di equipar para poder utilizarlo");
+					Scanner scanner3 = new Scanner(System.in);
+					String respuesta3 = scanner3.nextLine();
+					scanner3.close();
+					if (respuesta3 == "equipar") {
+						System.out.println("Ya puedes usar el anillo");
+						
+						
+					}	
+				}
+			}
+				
+		
+		
 	
 	
 	
-	
+	}
 }
