@@ -1,6 +1,6 @@
 package Objetos;
 
-public class Espada extends Arma implements acciones{
+public class Espada extends Arma{
 
 	protected static Boolean eequipado;
 	protected static double daño = 1.5;	

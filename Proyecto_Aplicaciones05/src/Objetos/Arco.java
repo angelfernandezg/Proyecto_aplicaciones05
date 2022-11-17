@@ -1,6 +1,6 @@
 package Objetos;
 
-public class Arco extends Arma implements acciones{
+public class Arco extends Arma{
 
 	protected Boolean cargado;
 	protected static Boolean aequipado;
