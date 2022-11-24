@@ -12,11 +12,21 @@ public class Personaje {
 	
 	public void atacar() {
 		if (Arco.aequipado) {
-			double golpe = this.ataque + Arco.daño;
+			public double golpe = this.ataque + Arco.daño;
 		}else if (Espada.eequipado) {
-			double golpe = this.ataque + Espada.daño;
+			public double golpe = this.ataque + Espada.daño;
 		}
 	}
 	
+	public void recibir() {
+		this.salud = this.salud - 3; //daño enemigo
+	}
+	
+//	public void usarPocion(Consumible x) {
+//		if (x = ) {
+//			x; //accion de la pocion
+//		}
+//	}
+//	
 	
 }
