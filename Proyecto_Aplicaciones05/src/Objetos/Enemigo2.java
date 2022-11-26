@@ -21,7 +21,7 @@ public class Enemigo2 extends Enemigo{
 	}
 
 	public void defender() {
-		double recib2 = ;
+		double recib2 = this.salud-Personaje.golpe*this.defensa;
 	}
 	public void atacar() {
 		double ataq2 = this.ataque*this.espada;

@@ -2,8 +2,8 @@ package Objetos;
 
 public class Enemigo extends Cofre{
 	
-	protected int salud;
-	protected int ataque;
+	protected int salud = 100;
+	protected int ataque = 15;
 	protected int defensa;
 	protected int Experiencia;
 	
