@@ -9,15 +9,16 @@ public class Personaje {
 	protected int ataque = 20;
 	protected int defensa = 20;
 	protected ArrayList<Objeto> inventario;
+	public double golpe;
 	
 	public void atacar() {
 		if (Arco.aequipado) {
-			double golpe = this.ataque + Arco.daño;
+			golpe = this.ataque * Arco.daño;
 		}else if (Espada.eequipado) {
-			double golpe = this.ataque + Espada.daño;
+			golpe = this.ataque * Espada.daño;
 		}
 	}
-	
+
 	public void recibir() {
 		this.salud = this.salud - 3; //daño enemigo
 	}
@@ -70,6 +71,12 @@ public class Personaje {
 		this.inventario = inventario;
 	}
 	
+	public double getGolpe() {
+		return golpe;
+	}
 
+	public void setGolpe(double golpe) {
+		this.golpe = golpe;
+	}
 	
 }
