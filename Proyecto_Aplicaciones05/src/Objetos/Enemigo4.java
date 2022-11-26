@@ -19,7 +19,7 @@ public class Enemigo4 extends Enemigo{
 	}
 
 	public void defender() {
-		double recib4 = ;
+		double recib4 = this.salud-Personaje.golpe*this.defensa;
 	}
 	public void atacar() {
 		double ataq4 = this.ataque*this.mazo;
