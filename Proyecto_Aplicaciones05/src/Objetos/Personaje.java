@@ -11,6 +11,8 @@ public class Personaje {
 	protected ArrayList<Objeto> inventario;
 	public static double golpe;
 	
+	//ha
+	
 	public void atacar() {
 		if (Arco.aequipado) {
 			golpe = this.ataque * Arco.daño;
