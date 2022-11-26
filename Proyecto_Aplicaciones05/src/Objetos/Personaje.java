@@ -9,7 +9,7 @@ public class Personaje {
 	protected int ataque = 20;
 	protected int defensa = 20;
 	protected ArrayList<Objeto> inventario;
-	public double golpe;
+	public static double golpe;
 	
 	public void atacar() {
 		if (Arco.aequipado) {
@@ -76,7 +76,7 @@ public class Personaje {
 	}
 
 	public void setGolpe(double golpe) {
-		this.golpe = golpe;
+		Personaje.golpe = golpe;
 	}
 	
 }
