@@ -6,11 +6,12 @@ public class Enemigo1 extends Enemigo{
 	protected double arco = 1.1;
 
 
-	public Enemigo1(int salud, int ataque, int defensa, int experiencia, double arco) {
-	super(salud, ataque, defensa, experiencia);
-	this.arco = arco;
-	}
 	
+	public Enemigo1(Boolean tieneLlave, int objeto, int salud, int ataque, int defensa, int experiencia, double arco) {
+	super(tieneLlave, objeto, salud, ataque, defensa, experiencia);
+	this.arco = arco;
+}
+
 	public double getArco() {
 		return arco;
 	}
