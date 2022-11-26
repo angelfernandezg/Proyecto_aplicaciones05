@@ -31,6 +31,7 @@ public class Personaje {
 //	}
 //}
 //
+	
 	public void sumExp(int exp) {
 		experiencia = experiencia + exp;
 		comprobarNivel(experiencia);
