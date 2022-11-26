@@ -5,9 +5,11 @@ import java.util.ArrayList;
 public class Personaje {
 
 	protected int salud = 100;
-	protected int experiencia = 0;
-	protected int ataque = 20;
-	protected int defensa = 20;
+	protected int experiencia;
+	protected int expfalta = 100 + nivel*10;
+	public static int nivel;
+	protected int ataque = 20 + nivel*10;
+	protected int defensa = 20 + nivel*10;
 	protected ArrayList<Objeto> inventario;
 	public static double golpe;
 	
@@ -29,7 +31,22 @@ public class Personaje {
 //	}
 //}
 //
-
+	public void sumExp(int exp) {
+		experiencia = experiencia + exp;
+		comprobarNivel(experiencia);
+	}
+	
+	public String comprobarNivel(int exp) {
+		if (exp >= expfalta) {
+			nivel = nivel+1;
+			exp = exp - expfalta;
+			return "¡Has subido de nivel! Tu nivel ahora es: " + nivel;
+		}else {
+			int x = expfalta - exp;
+			return "Te faltan" + x + "puntos de experiencia para subir de nivel";
+		}
+		
+	}
 	
 	public int getSalud() {
 		return salud;
