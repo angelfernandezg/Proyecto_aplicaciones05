@@ -6,6 +6,7 @@ import javax.swing.JTextField;
 
 public class NuevaPartida extends JFrame{
 
+	private static final long serialVersionUID = 1L;
 	protected JTextField nombre;
 	protected JTextField contrasenya;
 	protected JTextField carpetaguardado;
@@ -35,9 +36,10 @@ public class NuevaPartida extends JFrame{
 		getContentPane().add(crearpartida);
 		
 		this.setTitle("Crear Partida");
-		this.setLocationRelativeTo(null);
-		this.setSize(1200,600);
-		this.setDefaultCloseOperation(HIDE_ON_CLOSE);
+		this.setSize(800,400);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setVisible(false);
+		this.setLocationRelativeTo(null);
 	}
+	
 }

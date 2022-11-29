@@ -9,6 +9,7 @@ import javax.swing.JTextField;
 
 public class CargarPartida extends JFrame{
 
+	private static final long serialVersionUID = 1L;
 	protected JTextField rutapartida;
 	protected JButton aceptar;
 	protected Log_in login;
@@ -27,6 +28,7 @@ public class CargarPartida extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				login.setVisible(true);
+				
 			}
 		});
 		
@@ -40,9 +42,9 @@ public class CargarPartida extends JFrame{
 		getContentPane().add(aceptar);
 		
 		this.setTitle("Cargar Partida");
-		this.setLocationRelativeTo(null);
 		this.setSize(800,400);
-		this.setDefaultCloseOperation(HIDE_ON_CLOSE);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setVisible(false);
+		this.setLocationRelativeTo(null);
 	}
 }
