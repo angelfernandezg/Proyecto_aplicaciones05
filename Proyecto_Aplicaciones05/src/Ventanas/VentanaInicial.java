@@ -29,9 +29,9 @@ public class VentanaInicial extends JFrame{
 		botonnuevapartida.addActionListener(new ActionListener() {	
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				nuevapartida.setVisible(true);
 				VentanaInicial.this.setVisible(false);
+				nuevapartida.setVisible(true);
+				
 				
 				
 			}
@@ -41,20 +41,19 @@ public class VentanaInicial extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				cargarpartida.setVisible(true);
 				VentanaInicial.this.setVisible(false);
-				
+				cargarpartida.setVisible(true);
 			}
 		
 		});
 		botonpuntuacion = new JButton("Puntuacion");
 		botonpuntuacion.addActionListener(new ActionListener() {
 
-			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				puntuacion.setVisible(true);
 				VentanaInicial.this.setVisible(false);
+				puntuacion.setVisible(true);
+				
 				
 			
 				
@@ -78,8 +77,8 @@ public class VentanaInicial extends JFrame{
 		
 		this.setTitle("Inicio");		
 		this.setSize(800, 400);
-		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		this.setVisible(false);
+		this.setDefaultCloseOperation(HIDE_ON_CLOSE);
+		this.setVisible(true);
 		this.setLocationRelativeTo(null);
 		
 		

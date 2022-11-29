@@ -8,12 +8,14 @@ import javax.swing.JFrame;
 
 public class Ventana_del_Juego extends JFrame{
 
+	
+	private static final long serialVersionUID = 1L;
 	protected JButton inventario;
 	protected JButton mapa;
 	protected JButton personaje;
 	protected JButton tablacomandos;
 	protected Mapa ventanamapa;
-	protected Personaje ventanapersonaje;
+	protected PersonajeVentana ventanapersonaje;
 	protected Inventario ventanainventario;
 	protected TablaComandos ventanacomandos;
 	
@@ -23,7 +25,7 @@ public class Ventana_del_Juego extends JFrame{
 		
 		ventanamapa = new Mapa();
 		ventanacomandos = new TablaComandos();
-		ventanapersonaje = new Personaje();
+		ventanapersonaje = new PersonajeVentana();
 		ventanainventario = new Inventario();
 		
 		inventario = new JButton("");

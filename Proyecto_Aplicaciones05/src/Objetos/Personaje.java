@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Personaje {
 
 	protected int salud = 100;
-	protected int experiencia;
+	public static int experiencia;
 	protected int expfalta = 100 + nivel*10;
 	public static int nivel;
 	protected int ataque = 20 + nivel*10;
@@ -37,6 +37,7 @@ public class Personaje {
 		comprobarNivel(experiencia);
 	}
 	
+	
 	public String comprobarNivel(int exp) {
 		if (exp >= expfalta) {
 			nivel = nivel+1;
@@ -57,12 +58,12 @@ public class Personaje {
 		this.salud = salud;
 	}
 
-	public int getExperiencia() {
+	public static int getExperiencia() {
 		return experiencia;
 	}
 
 	public void setExperiencia(int experiencia) {
-		this.experiencia = experiencia;
+		Personaje.experiencia = experiencia;
 	}
 
 	public int getAtaque() {

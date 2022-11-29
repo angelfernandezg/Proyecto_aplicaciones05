@@ -2,9 +2,9 @@ package Ventanas;
 
 import javax.swing.JFrame;
 
-public class Personaje extends JFrame{
+public class PersonajeVentana extends JFrame{
 
-	public Personaje () {
+	public PersonajeVentana () {
 		
 		
 		this.setLocationRelativeTo(null);
