@@ -2,7 +2,7 @@ package Objetos;
 
 import java.util.Scanner;
 
-public class Sala3 extends Enemigo {
+public class Sala3 {
 	protected int cofre;
 	protected int llave;
 	protected int capa;
@@ -10,8 +10,8 @@ public class Sala3 extends Enemigo {
 	protected int guante;
 	
 
-	public Sala3(Boolean tieneLlave, int objeto, int cofre, int llave, int ataque, int salud, int defensa, int experiencia, int guante, int espadayoda) {
-		super(tieneLlave, objeto, ataque, salud, defensa, experiencia);
+	public Sala3(int cofre, int llave, int guante, int espadayoda) {
+		super();
 		// TODO Auto-generated constructor stub
 		this.cofre = cofre;
 		this.llave = llave;
@@ -19,14 +19,15 @@ public class Sala3 extends Enemigo {
 		this.guante = guante;
 	}
 	
-	int coleccionable = objetoAleatorio();
+	int coleccionable = Cofre.objetoAleatorio();
+	
 	
 	public void haycofre() {
-		if(salud <= 0) {
-			Cofre cofre1 = new Cofre(tieneLlave, cofre);
+		if(Enemigo3.salud <= 0) {
+			Cofre cofre1 = new Cofre(Cofre.tieneLlave, cofre);
 			cofre1.getObjeto();
 			if (this.cofre == 1) {
-				abrirCofre();
+				Cofre.abrirCofre();
 			}
 			else {
 				System.out.println("Parece que el cofre no está por aquí");
@@ -35,6 +36,7 @@ public class Sala3 extends Enemigo {
 		}
 		
 	}
+	
 		
 		public void getInspecionarsala(inspeccionar I) {
 			
@@ -63,6 +65,10 @@ public class Sala3 extends Enemigo {
 						System.out.println("Parece muy inestable, mejor la guardo y ya aprenderé a usarla\nmás adelante,"
 								+ "cuando no halla tanto peligro.");
 					}
+				}
+				if (Personaje.getSalud() > 0) {
+					Llave.tengoLlave(true);
+					System.out.println("Has encontardo la llave, ya la puedes ver en tu inventario");
 				}
 			}
 				

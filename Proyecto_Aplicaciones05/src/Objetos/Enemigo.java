@@ -2,7 +2,7 @@ package Objetos;
 
 public class Enemigo extends Cofre{
 	
-	protected int salud = 100;
+	protected static int salud = 100;
 	protected int ataque = 15;
 	protected int defensa;
 	protected int Experiencia;
@@ -10,7 +10,7 @@ public class Enemigo extends Cofre{
 	
 	public Enemigo(Boolean tieneLlave, int objeto, int salud, int ataque, int defensa, int experiencia) {
 		super(tieneLlave, objeto);
-		this.salud = salud;
+		Enemigo.salud = salud;
 		this.ataque = ataque;
 		this.defensa = defensa;
 		Experiencia = experiencia;
@@ -19,7 +19,7 @@ public class Enemigo extends Cofre{
 		return salud;
 	}
 	public void setSalud(int salud) {
-		this.salud = salud;
+		Enemigo.salud = salud;
 	}
 	public int getAtaque() {
 		return ataque;

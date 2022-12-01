@@ -8,7 +8,7 @@ public class Cofre extends Objeto {
 		
 
 	}
-	protected Boolean tieneLlave;
+	protected static Boolean tieneLlave;
 	protected int objeto;
 	
 	public Boolean getTieneLlave() {
@@ -16,7 +16,7 @@ public class Cofre extends Objeto {
 	}
 
 	public void setTieneLlave(Boolean tieneLlave) {
-		this.tieneLlave = tieneLlave;
+		Cofre.tieneLlave = tieneLlave;
 	}
 
 	public int getObjeto() {
@@ -29,7 +29,7 @@ public class Cofre extends Objeto {
 	
 	public Cofre(Boolean tieneLlave, int objeto) {
 		super();
-		this.tieneLlave = tieneLlave;
+		Cofre.tieneLlave = tieneLlave;
 		this.objeto = objeto;
 	}
 
@@ -46,8 +46,8 @@ public class Cofre extends Objeto {
 		return x;
 	}
 	
-	public String abrirCofre() {
-		if (this.tieneLlave == true) {
+	public static String abrirCofre() {
+		if (Cofre.tieneLlave == true) {
 			int o = objetoAleatorio();
 			System.out.println("¡Enhorabuena, has abierto el cofre!");
 			if (o==0) {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Personaje {
 
-	protected int salud = 100;
+	protected static int salud = 100;
 	public static int experiencia;
 	protected int expfalta = 100 + nivel*10;
 	public static int nivel;
@@ -50,12 +50,12 @@ public class Personaje {
 		
 	}
 	
-	public int getSalud() {
+	public static int getSalud() {
 		return salud;
 	}
 
 	public void setSalud(int salud) {
-		this.salud = salud;
+		Personaje.salud = salud;
 	}
 
 	public static int getExperiencia() {

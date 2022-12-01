@@ -2,15 +2,15 @@ package Objetos;
 
 import java.util.Scanner;
 
-public class Sala2 extends Enemigo{
+public class Sala2{
 	protected int cofre;
 	protected int llave;
 	protected int diadema;
 	protected int guante;
 	
 
-	public Sala2(Boolean tieneLlave, int objeto, int cofre, int llave, int ataque, int salud, int defensa, int experiencia, int diadema, int guante) {
-		super(tieneLlave, objeto, ataque, salud, defensa, experiencia);
+	public Sala2(int cofre, int llave, int diadema, int guante) {
+		super();
 		// TODO Auto-generated constructor stub
 		this.cofre = cofre;
 		this.llave = llave;
@@ -18,14 +18,14 @@ public class Sala2 extends Enemigo{
 		this.guante = guante;
 	}
 	
-	int coleccionable = objetoAleatorio();
+	int coleccionable = Cofre.objetoAleatorio();
 	
 	public void haycofre() {
-		if(salud <= 0) {
-			Cofre cofre1 = new Cofre(tieneLlave, cofre);
+		if(Enemigo2.salud <= 0) {
+			Cofre cofre1 = new Cofre(Cofre.tieneLlave, cofre);
 			cofre1.getObjeto();
 			if (this.cofre == 1) {
-				abrirCofre();
+				Cofre.abrirCofre();
 			}
 			else {
 				System.out.println("Parece que el cofre no está por aquí");
