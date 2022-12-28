@@ -14,7 +14,7 @@ public class main {
 	Sala1 sala2 = new Sala2();
 	Sala1 sala3 = new Sala3();
 	Sala1 sala4 = new Sala4();
-	static NuevaPartida nuevapartida = new NuevaPartida();
+	static NuevaPartida nuevaspartida = new NuevaPartida();
 	static JButton crearpartida = nuevapartida.getCrearpartida();
 	
 	public static void main(String[] args) {
