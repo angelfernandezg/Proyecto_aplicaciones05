@@ -7,6 +7,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class main {
+	System.out.println("Inspeccionar \n Abrir inventario");
 	
 	Personaje personaje = new Personaje();
 	private Enemigo enemigo;
@@ -57,7 +58,7 @@ public class main {
 		    });
 		    temporizador.start();
 		  }
-		
+		inicio()
 	}
 
 }

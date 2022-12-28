@@ -51,7 +51,7 @@ public class Sala1 {
 					String respuesta2 = scanner2.nextLine();
 					scanner2.close();
 					if (respuesta2 == "abrir") {
-						System.out.println("Parece que me he dejado las gafas de leer en casa.\nUna pena"
+						System.out.println("Parece que me he dejado las gafas de leer en casa.\nUna pena "
 								+ "no poder leer esta obra de arte, otra vez será.");
 					}
 					
@@ -69,11 +69,38 @@ public class Sala1 {
 					}	
 				}
 			}
-				
-		
-		
-	
-	
-	
 	}
+		
+		public void inicio() {
+			System.out.println("Te adentras en las profundidades de la mazmorra. Actualmente te encuentras en la primera sala. ¿Que te gustaría hacer?");
+			primeraSala();
+		}
+		public void primeraSala() {
+			System.out.println("Inspeccionar \n Inventario");
+			Scanner scanner4 = new Scanner(System.in);
+			String respuesta4 = scanner4.nextLine();
+			if (respuesta4 == "Inspeccionar") {
+				System.out.println("Delante \n Derecha \n Izquierda");
+				Scanner scanner5 = new Scanner(System.in);
+				String respuesta5 = scanner5.nextLine();
+				if (respuesta5 == "Delante") {
+					System.out.println("x");
+				}
+				else if (respuesta5 == "Derecha") {
+					System.out.println("x");
+				}
+				else if (respuesta5 == "Izquierda") {
+					System.out.println("x");
+				}
+			}
+			else if (respuesta4 == "Inventario") {
+				
+			}
+		}
+
+		private void elif(boolean b) {
+			// TODO Auto-generated method stub
+			
+		}
+		
 }
