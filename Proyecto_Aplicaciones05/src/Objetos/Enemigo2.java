@@ -7,8 +7,8 @@ public class Enemigo2 extends Enemigo{
 
 	
 	
-	public Enemigo2(Boolean tieneLlave, int objeto, int salud, int ataque, int defensa, int experiencia, double espada) {
-	super(tieneLlave, objeto, salud, ataque, defensa, experiencia);
+	public Enemigo2(int salud, int ataque, int defensa, int experiencia, double espada) {
+	super(salud, ataque, defensa, experiencia);
 	this.espada = espada;
 }
 

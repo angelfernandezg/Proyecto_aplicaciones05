@@ -5,8 +5,8 @@ public class Enemigo4 extends Enemigo{
 //Orco 
 	protected double mazo = 2;
 	
-	public Enemigo4(Boolean tieneLlave, int objeto, int salud, int ataque, int defensa, int experiencia, double mazo) {
-	super(tieneLlave, objeto, salud, ataque, defensa, experiencia);
+	public Enemigo4(int salud, int ataque, int defensa, int experiencia, double mazo) {
+	super(salud, ataque, defensa, experiencia);
 	this.mazo = mazo;
 }
 
