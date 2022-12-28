@@ -12,6 +12,8 @@ public class Personaje {
 	protected int defensa = 20 + nivel*10;
 	protected ArrayList<Objeto> inventario;
 	public static double golpe;
+	private Sala1 salaActual;
+
 	
 	public void atacar() {
 		if (Arco.aequipado) {
@@ -49,6 +51,11 @@ public class Personaje {
 		}
 		
 	}
+	
+	public Sala1 getSalaActual() {
+		  return salaActual;
+	}
+
 	
 	public static int getSalud() {
 		return salud;

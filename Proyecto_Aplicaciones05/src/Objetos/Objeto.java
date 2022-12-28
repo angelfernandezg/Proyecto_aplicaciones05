@@ -2,15 +2,24 @@ package Objetos;
 
 public class Objeto {
 
-	protected String nombre; 
-	
-	public String coger(Objeto o) {
-		
-		return "";
-	}
-	
-	public String tirar(Objeto o) {
-		
-		return "";
-	}
+	  public String nombre;
+	  public String descripcion;
+	  public Object icono;
+	  public int cantidad;
+	  
+	  public Objeto(String nombre, String descripcion, Object icono, int cantidad) {
+		    this.nombre = nombre;
+		    this.descripcion = descripcion;
+		    this.icono = icono;
+		    this.cantidad = cantidad;
+		  }
+
+	  
+	  public void use() {
+		    
+		  }
+
+	  public void equip() {
+	    
+	  }
 }
